@@ -1,84 +1,95 @@
-General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Lexend Deca', sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url('backk.PNG') no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
-
-.container {
-    display: flex;
-    max-width: 800px;
-    margin-left: 600px;
-    margin-top: 300px;
-    height: 450px;
-}
-
 .card {
-    flex: 1;
-    padding: 30px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card img {
-    width: 50px;
-    margin-bottom: 20px;
-}
-
-.card h2 {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
-    font-size: 29px;
-    margin: 0 0 10px;
-}
-
-.card p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0 0 20px;
-    position: relative;
-    top: 20px;
-    color: rgba(255, 255, 255, 0.737);
-}
-
-.button {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.962);
-    border: 2px solid hsl(0, 0%, 95%);
-    padding: 10px 20px;
-    border-radius: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
     text-align: center;
-    font-weight: bold;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 20px;
-    top: 70px;
-}
-.card-sedan {
-    position: relative;
-    left: 20px;
-    background-color: hsl(31, 77%, 52%);
-}
-.card-sedan .button{
-    color: hsl(31, 77%, 52%);
+    height: 400px;
+    
 }
 
-.card-suv {
-    background-color: hsl(184, 100%, 22%);
-    margin: 0 20px;
+.card-header {
+    background: url('bg-pattern-card.svg') no-repeat center;
+    background-size: cover;
+    padding: 80px;
+    width: 350px;
+    height: 30px;
 }
-.card-suv .button{
-    color: hsl(184, 100%, 22%) ;
-}
-.card-luxury {
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: -50px auto 10px;
     position: relative;
-    left: -20px;
-    background-color: hsl(179, 100%, 13%);
+    top: 80px;
 }
-.card-luxury .button{
-    color: hsl(179, 100%, 13%) ;
+
+
+.body {
+    padding: 20px;
+}
+
+.body h1 {
+    font-size: 22px;
+    position: relative;
+    top: 45px;
+}
+
+.body h1 span {
+    font-weight: 400;
+    color: hsl(0, 0%, 55%);
+    font-size: 14px;
+    
+}
+
+.body p {
+    color: hsl(0, 0%, 59%);
+    font-size: 16px;
+    position: relative;
+    top: 50px;
+}
+
+.footer {
+    display: flex;
+    border-top: 1px solid hsl(0, 0%, 94%);
+    position: relative;
+    top: 50px;
+}
+
+.fot {
+    flex: 1;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.fot h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fot p {
+    color: hsl(0, 1%, 51%);
+    font-size: 14px;
+    margin-top: 5px;
 }

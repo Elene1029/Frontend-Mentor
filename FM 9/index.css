@@ -1,6 +1,9 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: hsl(0, 0%, 95%);
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("pattern-background-desktop.svg" ) ;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,96 +11,99 @@ body {
     margin: 0;
 }
 
-.container {
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
     text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
     padding: 20px;
 }
 
 h1 {
-    font-weight: 200;
-    color: hsl(234, 12%, 34%);
-    position: relative;
-    bottom: 190px;
-    font-size: 40px;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 15px;
 }
 
-h1 span {
-    font-weight: 600;
-    position: relative;
-    bottom: -10px;
-}
-.container p{
-    position: relative;
-    bottom: 180px;
-    line-height: 1.7;
-    color: rgba(185, 185, 185, 0.811);
-    font-size: 18px;
+p {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
-.card-wrapper {
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 10px 19px rgb(198, 196, 196);
-    margin: 10px;
-    padding: 25px;
-    width: 370px;
+.plan img {
+    margin-right: 15px;
+}
+
+.plan-details {
     text-align: left;
+    flex-grow: 1;
 }
 
-.card h2 {
-    color: hsl(234, 12%, 34%);
-    position: relative;
-    bottom: 110px;
-    font-size: 30px;
+.plan-name {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
 }
 
-.card p {
-    color: hsl(229, 6%, 66%);
-    position: relative;
-    bottom: 110px;
-    line-height: 1.5;
+.plan-price {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
 }
 
-.icon {
-    display: flex;
-    justify-content: flex-end;
+.link {
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.card-1 {
-    border-top: 4px solid hsl(180, 62%, 55%);
-    position: relative;
-    right: -200px;
+.link:hover {
+    text-decoration: underline;
 }
 
-.card-2 {
-    border-top: 4px solid hsl(0, 78%, 62%);
-    position: relative;
-    bottom: 180px;
-    left: 230px;
+.button{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
 }
 
-.card-3 {
-    border-top: 4px solid hsl(34, 97%, 64%);
-    position: relative;
-    bottom: -180px;
-    left: -210px;
+
+.butt{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0px 10px 19px rgba(155, 155, 155, 0.764);
 }
 
-.card-4 {
-    border-top: 4px solid hsl(212, 86%, 64%);
-    position: relative;
-    right: 190px;
+.butt:hover {
+    background-color: hsl(245, 65%, 45%);
 }
 
-.icon img{
-    position: relative;
-    top: 120px;
-    width: 100px;
+.but {
+    background-color: transparent;
+    color: hsl(224, 48%, 35%);
 }
+

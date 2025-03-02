@@ -1,9 +1,6 @@
 body {
-    font-family: 'Red Hat Display', sans-serif;
-    background-color: hsl(225, 100%, 94%);
-    background-image: url("pattern-background-desktop.svg" ) ;
-    background-repeat: no-repeat;
-    background-repeat: repeat-x;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,98 +9,77 @@ body {
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 350px;
-    text-align: center;
-}
-
-.card-image {
-    width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-h1 {
-    color: hsl(223, 47%, 23%);
-    margin-bottom: 15px;
-}
-
-p {
-    color: hsl(224, 23%, 55%);
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.plan {
-    background-color: hsl(225, 100%, 98%);
+    background-color: hsl(244, 43%, 14%);
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    padding: 20px;
+    max-width: 1100px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    padding: 40px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 40px;
+    line-height: 1.4;
     margin-bottom: 20px;
 }
 
-.plan img {
-    margin-right: 15px;
+.content h1 .hig {
+    color: hsl(277, 64%, 61%);
 }
 
-.plan-details {
-    text-align: left;
-    flex-grow: 1;
+.content p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 17px;
 }
 
-.plan-name {
-    color: hsl(223, 47%, 23%);
-    font-weight: 700;
+.statiebi {
+    display: flex;
+    justify-content: space-between;
 }
 
-.plan-price {
-    color: hsl(224, 23%, 55%);
+.statia h2 {
+    font-size: 2em;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+.statia p {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
     font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 5px;
 }
 
-.link {
-    color: hsl(245, 75%, 52%);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
+
+.card-image {
+    position: relative;
+    overflow: hidden;
 }
 
-.link:hover {
-    text-decoration: underline;
-}
-
-.button{
+.card-image::before {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    margin-bottom: 10px;
-    
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.6;
 }
 
-
-.butt{
-    background-color: hsl(245, 75%, 52%);
-    color: #fff;
-    box-shadow: 0px 10px 19px rgba(155, 155, 155, 0.764);
+.card-image img {
+    display: block;
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
 }
-
-.butt:hover {
-    background-color: hsl(245, 65%, 45%);
-}
-
-.but {
-    background-color: transparent;
-    color: hsl(224, 48%, 35%);
-}
-
